@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Ketevan Gallagher
     </title>
     </head>
     <body>
-        Contact: KetevanGallagher@gmail.com
+        Contact: KetevanGallagher@mail.utoronto.ca
 
     <div style="display: flex; align-items: center; gap: 15px; background-color: #f5f5f5; padding: 15px 25px; border-radius: 8px; border: 1px solid #ddd;">
     <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=prev" style="color: #333; text-decoration: none; font-size: 1.5rem;">←</a>
