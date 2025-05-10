@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
     <title>
         Ketevan Gallagher
     </title>
+    </head>
     <body>
         Contact: KetevanGallagher@gmail.com
-    </body>
 
-     <div style="display: flex; align-items: center; gap: 15px; background-color: #f5f5f5; padding: 15px 25px; border-radius: 8px; border: 1px solid #ddd;">
-    <a href="https://webring.ayanali.net/#https://lukepayant.com?nav=prev" style="color: #333; text-decoration: none; font-size: 1.5rem;">←</a>
-    <a href="https://webring.ayanali.net/#https://lukepayant.com" target="_blank">
+    <div style="display: flex; align-items: center; gap: 15px; background-color: #f5f5f5; padding: 15px 25px; border-radius: 8px; border: 1px solid #ddd;">
+    <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=prev" style="color: #333; text-decoration: none; font-size: 1.5rem;">←</a>
+    <a href="https://webring.ayanali.net/#https://ketevangallagher.com" target="_blank">
         <img src="https://webring.ayanali.net/img/icon.svg" alt="The Unnamed Webring" style="width: 32px; height: 32px;"/>
     </a>
-    <a href="https://webring.ayanali.net/#https://lukepayant.com?nav=next" style="color: #333; text-decoration: none; font-size: 1.5rem;">→</a>
-    </div>
+    <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=next" style="color: #333; text-decoration: none; font-size: 1.5rem;">→</a>
+
+</div>
+    </body>
+
+     
 </html>
