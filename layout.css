@@ -1,0 +1,118 @@
+
+.webringTemp {
+    width: 120px;
+    height: 20px;
+}
+
+
+.raleway-font {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+p {
+    /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    font-weight: 200;*/
+    font-family: "Raleway", sans-serif;
+    font-size: 120%;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 200%;
+    /* background-color: bisque; */
+}
+
+div.mainParagraph {
+    position: static;
+    margin-top: 60px;
+    width: 70%;
+    height: auto;
+    /* background-color: powderblue; */
+    display: grid;
+    grid-template-columns:50% 50%;
+    align-items: start;
+    padding-left: 20%;
+
+  }
+
+  img{
+    margin-left: 10% ;
+    margin-right: 10%;
+    /* margin-top: 5%; */
+  }
+
+  
+
+div.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:35px;   /* Height of the footer */
+    background-color: #030081;
+ }
+
+div.navMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff7b;
+} 
+
+div.navLinks{
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 7.5%; */
+    position: fixed;
+    right: 0;
+    width: 40%;
+    height: 45px;
+    background-color: #1ddc66;
+    border-bottom-width:2px;
+    border-bottom-style:solid;
+    border-bottom-color:#030081;
+    display: inline-block;
+
+}
+
+div.scrollBar{
+    position: fixed;
+    right: 0;
+    width: 40%;
+    height: 45px;
+    background-color: #ffffff;
+    z-index: -1;
+    /* border-bottom-width:2px;
+    border-bottom-style:solid;
+    border-bottom-color:#030081; */
+}
+
+
+/* Style the links inside the navigation bar */
+.navMenu a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 120%;
+    padding-left: 0%;
+  }
+  
+  /* Change the color of links on hover */
+  .navMenu a:hover {
+    color: #030081;
+  }
+
+/*navlink??*/
