@@ -12,6 +12,12 @@
     font-style: normal;
 }
 
+.antic-didone-regular {
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 p {
     /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
     font-weight: 200;*/
@@ -20,15 +26,15 @@ p {
 }
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    font-size: 200%;
+    font-family: "Antic Didone", serif;
+    font-weight: 500;
+    font-size: 250%;
     /* background-color: bisque; */
 }
 
 div.mainParagraph {
     position: static;
-    margin-top: 60px;
+    margin-top: 75px;
     width: 70%;
     height: auto;
     /* background-color: powderblue; */
@@ -113,6 +119,20 @@ div.scrollBar{
   /* Change the color of links on hover */
   .navMenu a:hover {
     color: #030081;
+    text-decoration: none;
   }
 
-/*navlink??*/
+a {
+    color: #030081;
+    text-decoration:none
+}
+
+a:hover{
+    text-decoration: underline;
+    
+}
+
+a.pdfLinks{
+    color: #4d4d4d;
+    font-weight: 500;
+}
