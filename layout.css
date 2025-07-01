@@ -27,7 +27,7 @@ body {
 
 p {
     font-family: "Raleway", sans-serif;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 h1{
@@ -43,22 +43,25 @@ h2{
 }
 
 div.mainParagraph {
-    position: static;
-    margin-top: 75px;
-    width: 70%;
-    height: auto;
     display: grid;
     grid-template-columns:50% 50%;
     align-items: start;
-    padding-left: 20%;
 
   }
 
-  img{
+  div.mainPageText{
+    position: fixed;
+    margin-top: 75px;
+    width: 70%;
+    height: fit-content;
+    margin-left: 20%;
+  }
+
+
+  /* img{
     margin-left: 10% ;
     margin-right: 10%;
-    /* margin-top: 5%; */
-  }
+  } */
 
 
 
@@ -139,11 +142,12 @@ a:hover{
     
 }
 
-a.pdfLinks{
+a.smallLinks{
     color: #4d4d4d;
     font-weight: 700;
+    padding: 2%;
 }
-a.pdfLinks:hover {
+a.smallLinks:hover {
     text-decoration: none;
     color: #787878;
 }
