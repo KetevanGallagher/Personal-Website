@@ -52,7 +52,7 @@ function darkMode() {
   r.style.setProperty("--sLink", "#b2b2b2");
   r.style.setProperty("--sLinkHover", "#878787");
   document.getElementById("darkLightMode").src="img/sun.svg";
-  document.getElementById("wrIcon").src="https://webring.skule.ca/img/icon.svg";
+  document.getElementById("wrIcon").src="https://webring.ayanali.net/img/icon.svg";
   const stars = document.querySelectorAll(".star");
   stars.forEach(function(star) {
     star.classList.add("dark");
@@ -70,7 +70,7 @@ function lightMode() {
   r.style.setProperty("--sLink", "#4d4d4d");
   r.style.setProperty("--sLinkHover", "#787878");
   document.getElementById("darkLightMode").src="img/moon.svg";
-  document.getElementById("wrIcon").src="https://webring.skule.ca/img/icon-dark.svg";
+  document.getElementById("wrIcon").src="https://webring.ayanali.net/img/icon-dark.svg";
   const stars = document.querySelectorAll(".star");
   stars.forEach(function(star) {
     star.classList.remove("dark");
