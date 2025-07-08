@@ -14,18 +14,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVCM5TNR3D"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CVCM5TNR3D');
+    </script>
 </head>
 
 <body>
     <div class="navMenu">
-            <div class="navLinks">
-                <a href="index.html">Home</a>
-                <a href="publications.html">Publications</a>
-                <a href="projects.html">Projects</a>
-                <a style="font-weight: 500;" href="education.html">Education</a>
-                <a href="KetevanGallagherResume.pdf" target="_blank">Resume</a>
-                <div class = "scrollBar"></div>
-            </div>
+        <div class="navLinks">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="projects.html">Projects</a>
+            <a style="font-weight: 500;" href="education.html">Education</a>
+            <a href="resources/2025KetevanGallagher.pdf" target="_blank">Resume</a>
+            <img id = "darkLightMode" src="img/moon.svg" alt="Dark/light mode button" height="75%" width="75%" style="padding-top: 1%; padding-right: 1.5%;" onclick="switchTheme()">
+            <div class = "scrollBar"></div>
+        </div>
     </div>
     
     <div style="margin-top: 30px; margin-left: 15%;">
@@ -33,16 +44,38 @@
             Education
         </h1>
         <h2>
-            University of Toronto
+            BASc in Computer Engineering, University of Toronto
         </h2>
 
         <p style="text-align: left;  width: 80%;">
-            <span style="color:#030081"><b>Bachelor's of Applied Science in Computer Engineering, Class of 2028.</b></span>
-            <br>
-            Coursework: Engineering Strategies and Practice I and II, Calculus I and II, Computer Fundamentals, Electrical Fundamentals, Linear Algebra, Mechanics, Dynamics.
-            <br>
-            <br>
-            At University of Toronto, I am a memeber of aUToronto, UofT's self-driving car team. 
+
+            <!-- add timeline on the side? -->
+            
+            <!-- take this out vvv             -->
+            <!-- <span class="textHighlight"><b>Bachelor's of Applied Science in Computer Engineering, Class of 2028.</b></span> -->
+            <!-- <br> -->
+
+            <!-- bullet point course work, have multiple columns for them -->
+            <span class="textHighlight"><b>Coursework:</b></span> </p>
+            <div style="display:flex; vertical-align:top;">
+                <div>
+                <ul>
+                  <li>Linear Algebra</li>
+                  <li>Calculus I and II</li>
+                  <li>Computer Fundamentals</li>
+                  <li>Electrical Fundamentals</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Engineering Strategies and Practice I and II</li>
+                    <li>Mechanics</li>
+                    <li>Dynamics</li>
+                </ul>
+            </div>
+            </div>
+            <p style="text-align: left;  width: 80%;">
+            At the University of Toronto, I am a member of aUToronto, UofT's self-driving car team. 
             I was promoted from a general member of the mapping team to the Mapping Team Lead in May of 2025. </p>
         
         </p>
@@ -56,14 +89,36 @@
             Thomas Jefferson High School for Science and Technology
         </h2>
 
-        <p style="text-align: left; width: 80%;">
-            <span style="color:#030081"><b>Class of 2024.</b></span>
-            <br>
-            Coursework: Artificial Intelligence, Machine Learning, Computer Systems Senior Research Laboratory, 
-            Automation and Robotics I, Digital Electronics, Research Statistics I and II, Multivariable Calculus, 
-            AP Physics C Mechanics, AP Physics C Electricity & Magnetism.
-            <br>
-            <br>
+        <p style="text-align: left; width: 80%;">            
+            <span class="textHighlight"><b>Coursework:</b></span> </p>
+            <div style="display:flex; vertical-align:top;">
+                <div>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Multivariable Calculus</li>
+                        <li>Research Statistics I and II</li>
+                    </ul>
+                </div>
+                <div>
+                <ul>
+                  <li>Artificial Intelligence</li>
+                  <li>Digital Electronics</li>
+                  <li>AP Physics C Mechanics</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Computer Systems Senior Research Laboratory</li>
+                    <li>Automation and Robotics I</li>
+                    <li>AP Physics C Electricity & Magnetism</li>
+                </ul>
+            </div>
+            
+            </div>
+            <p style="text-align: left;  width: 80%;">
+
+            <!-- add extracurricular header and bullet point this stuff -->
+
             At Thomas Jefferson High School for Science and Technology (TJHSST), I was the Co-President of the TJHSST chapter for CyberPatriot.
             CyberPatriot is is the National Youth Cyber Defense Competition, the United States' largest high school cyber defense competition.
             As Co-President, I organized lecture schedules, team registration, and outreach, and gave lectures on Cisco topics such as VLANs.
@@ -80,17 +135,19 @@
     </div>
 
     <div class="footer">
-        <div class="webringTemp" style="display: flex; align-items: center; background-color: #f5f5f500; margin-top: 0.5%;">
+        <div class="webringButton">
             <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=prev"
-                style="color: #ffffff; text-decoration: none; font-size: 100%; margin-right: 5%; margin-left: 5%;">←</a>
+               class="webring" style="margin-right: 5%;">←</a>
             <a href="https://webring.ayanali.net/#https://ketevangallagher.com" target="_blank">
-                <img src="https://webring.ayanali.net/img/icon-dark.svg" alt="The Currently Unnamed Webring"
+                <img id = "wrIcon" src="https://webring.skule.ca/img/icon-dark.svg" alt="The Currently Unnamed Webring"
                     style="height: 25px;" />
             </a>
             <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=next"
-                style="color: #ffffff; text-decoration: none; font-size: 100%; margin-left: 5%;">→</a>
+                class="webring">→</a>
         </div>
     </div>
+
+<script src="script.js"></script>
 </body>
 
 </html>

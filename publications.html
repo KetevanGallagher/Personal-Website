@@ -15,32 +15,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVCM5TNR3D"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CVCM5TNR3D');
+    </script>
 </head>
 
 <body>
     <div class="navMenu">
-            <div class="navLinks">
-                <a href="index.html">Home</a>
-                <a style="font-weight: 500;" href="publications.html">Publications</a>
-                <a href="projects.html">Projects</a>
-                <a href="education.html">Education</a>
-                <a href="KetevanGallagherResume.pdf" target="_blank">Resume</a>
-                <div class = "scrollBar"></div>
-            </div>
+        <div class="navLinks">
+            <a href="index.html">Home</a>
+            <a style="font-weight: 500;" href="publications.html">Publications</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="resources/2025KetevanGallagher.pdf" target="_blank">Resume</a>
+            <img id = "darkLightMode" src="img/moon.svg" alt="Dark/light mode button" height="75%" width="75%" style="padding-top: 1%; padding-right: 1.5%;" onclick="switchTheme()">
+            <div class = "scrollBar"></div>
+        </div>
     </div>
     <div style="margin-top: 30px; margin-left: 15%;">
         <h1>
             Publications
         </h1>
         <p style="text-align: left; width: 80%;">
-            For the past three years, I have worked with <a href="https://www.zuefle.org/" target="_blank">Dr. Andreas Züfle</a>, first as part of the Aspiring Scientists Summer Internship Program,
-            and most recently as an intern in the <a href="https://spatial.cs.emory.edu/" target="_blank">Spatial Computing Lab</a> at Emory University.
+            For the past three years, I have worked with <a href="https://www.zuefle.org/" target="_blank">Dr. Andreas Züfle</a>, 
+            most recently as an intern in the <a href="https://spatial.cs.emory.edu/" target="_blank">Spatial Computing Lab</a> at Emory University.
         </p>
         <p style="text-align: left; width: 80%;">
             * indicates equal contribution
         </p>
         <p style="text-align: left; width: 80%;">
-            <a href="SyntheticGeosocialNetworkGeneration.pdf" target="_blank"><b>Synthetic Geosocial Network Generation</b> <i class="fa fa-file-text-o"></i></a>
+            <a href="resources/SyntheticGeosocialNetworkGeneration.pdf" target="_blank"><b>Synthetic Geosocial Network Generation</b> <i class="fa fa-file-text-o"></i></a>
             <br>
             <b>Ketevan Gallagher</b>, Taylor Anderson, Andrew Crooks, Andreas Züfle
             <br>
@@ -49,7 +60,7 @@
             2023
         </p>
         <p style="text-align: left; width: 80%;">
-            <a href="HumanMobilityBasedSyntheticSocialNetworkGeneration.pdf" target="_blank"><b>Human Mobility-Based Synthetic Social Network Generation</b> <i class="fa fa-file-text-o"></i></a>
+            <a href="resources/HumanMobilityBasedSyntheticSocialNetworkGeneration.pdf" target="_blank"><b>Human Mobility-Based Synthetic Social Network Generation</b> <i class="fa fa-file-text-o"></i></a>
             <br>
             <b>Ketevan Gallagher</b>*, Srihan Kotnana*, Sachin Satishkumar*, Kheya Siripurapu*, Justin Elarde, Taylor Anderson, Andreas Züfle, Hamdi Kavak
             <br>
@@ -61,17 +72,19 @@
     </div>
 
     <div class="footer">
-        <div class="webringTemp" style="display: flex; align-items: center; background-color: #f5f5f500; margin-top: 0.5%;">
+        <div class="webringButton">
             <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=prev"
-                style="color: #ffffff; text-decoration: none; font-size: 100%; margin-right: 5%; margin-left: 5%;">←</a>
+               class="webring" style="margin-right: 5%;">←</a>
             <a href="https://webring.ayanali.net/#https://ketevangallagher.com" target="_blank">
-                <img src="https://webring.ayanali.net/img/icon-dark.svg" alt="The Currently Unnamed Webring"
+                <img id = "wrIcon" src="https://webring.skule.ca/img/icon-dark.svg" alt="The Currently Unnamed Webring"
                     style="height: 25px;" />
             </a>
             <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=next"
-                style="color: #ffffff; text-decoration: none; font-size: 100%; margin-left: 5%;">→</a>
+                class="webring">→</a>
         </div>
     </div>
+
+<script src="script.js"></script>
 </body>
 
 </html>

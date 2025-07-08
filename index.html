@@ -8,6 +8,7 @@
         Ketevan Gallagher
     </title>
     <link rel="stylesheet" href="layout.css"> 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,6 +16,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVCM5TNR3D"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CVCM5TNR3D');
+    </script>
 
 </head>
 
@@ -25,19 +36,20 @@
                 <a href="publications.html">Publications</a>
                 <a href="projects.html">Projects</a>
                 <a href="education.html">Education</a>
-                <a href="KetevanGallagherResume.pdf" target="_blank">Resume</a>
+                <a href="resources/2025KetevanGallagher.pdf" target="_blank">Resume</a>
+                <img src="img/moon.svg" id = "darkLightMode" alt="Dark/light mode button" height="75%" width="75%" style="padding-top: 1%; padding-right: 1.5%;" onclick="switchTheme()">
                 <div class = "scrollBar"></div>
             </div>
     </div>
     <div class = "mainPageText">
         <div class="mainParagraph">
             <div style="margin-left: 4.5vw;">
-                <img src="mainUpdate.jpg" alt="A photo of Ketevan Gallagher" height="80%" width="80%">
+                <img src="img/mainUpdate.jpg" alt="A photo of Ketevan Gallagher" height="85%" width="85%">
                 <div style="justify-content: center; display: flex; width: 80%; font-size: 175%;">
                     <a class= "smallLinks" href="mailto:Ketevan.Gallagher@mail.utoronto.ca"> <i class="fa fa-envelope"></i> </a>
-                    <img src="stardivider.svg" alt="Blue star" height="15%" width="15%">
+                    <img class = "star" alt="Star divider">
                     <a class= "smallLinks" href="https://github.com/KetevanGallagher" target="_blank"> <i class="fa fa-github"></i> </a>
-                    <img src="stardivider.svg" alt="Blue star" height="15%" width="15%">
+                    <img class = "star" alt="Star divider">
                     <a class= "smallLinks" href="https://www.linkedin.com/in/ketevan-gallagher-57366b298/" target="_blank"> <i class="fa fa-linkedin"></i> </a>  
                 </div>
             </div>
@@ -45,7 +57,7 @@
                 <h1 style="margin-top: -5px;">
                     Ketevan Gallagher
                 </h1>
-                <p style="text-align: justify; width: 72%;">
+                <p style="text-align: justify; width: 75%;">
                     Hello! I am a current undergraduate student at the University of Toronto studying computer engineering.
                     I'm interested in cybersecurity, spatial computer science, and machine learning, particularly natural language processing.
                     <br>
@@ -54,17 +66,27 @@
                     I am currently the Mapping Team Lead for aUToronto, University of Toronto's self driving car team.
                     <br>
                     <br>
-                    My other interests include Tetris, alternative/punk rock music, and jazz piano. The best way to reach me is through either my personal or school email:
-                    KetevanGallagher@gmail.com and Ketevan.Gallagher@mail.utoronto.ca respectively.
+                    My other interests include Tetris, alternative rock music, and jazz piano. 
+                    The best way to reach me is through either my 
+                    <a href="mailto:KetevanGallagher@gmail.com">personal</a> or 
+                    <a href="mailto:Ketevan.Gallagher@mail.utoronto.ca">University of Toronto</a> email.
+
+                    <!--
+                    line up last line of text with icons?
+                     -->
                 </p>
             </div>
         </div>
+        
         <!-- work in progress -->
-        <!-- <div style="text-align: left; margin-left: 4.5vw;">
+        <div style="text-align: left; margin-left: 4.5vw; width: 80%;">
             <h2>
                 Updates
             </h2>
-        </div> -->
+            <p>
+                <span class="textHighlight"><b>6/2025:</b> </span> I submitted a short paper to ACM SIGSPATIAL 2025! The abstract, code, and detailed results for this paper can be found in my <a href="https://github.com/KetevanGallagher/Geosocial-Network-Location-Estimation" target="_blank">Github</a>.
+            </p>
+        </div>
 
     </div>
 
@@ -72,35 +94,38 @@
 
     <!-- <div style="margin-top: 2%; width: 100%; align-items: center;">
         <div style="display: flex;">
-            <img style=" margin-left:20%; margin-right: 0%;" src="barbedWire.svg" alt="Barbed Wire"/> 
-            <img style="margin-left: 0%; margin-right: 0%;" src="barbedWire.svg" alt="Barbed Wire"/>
-            <img style="margin-left: 0%; margin-right: 0%;" src="barbedWire.svg" alt="Barbed Wire"/>
-            <img style="margin-left: 0%;" src="barbedWire.svg" alt="Barbed Wire"/>
+            <img style=" margin-left:20%; margin-right: 0%;" src="img/barbedWire.svg" alt="Barbed Wire"/> 
+            <img style="margin-left: 0%; margin-right: 0%;" src="img/barbedWire.svg" alt="Barbed Wire"/>
+            <img style="margin-left: 0%; margin-right: 0%;" src="img/barbedWire.svg" alt="Barbed Wire"/>
+            <img style="margin-left: 0%;" src="img/barbedWire.svg" alt="Barbed Wire"/>
         </div>
         <div style="display: flex;">
-            <img style="margin-top: 10px; margin-left:20%; margin-right: 0%; width: 3%; height: 3%;" src="hazard.png" alt="Exclamation Mark"/> 
+            <img style="margin-top: 10px; margin-left:20%; margin-right: 0%; width: 3%; height: 3%;" src="img/hazard.png" alt="Exclamation Mark"/> 
             <p style="font-size: 110%;">This website is still under construction as of 6/2025. Please check back later!</p>
-            <img style="margin-top: 10px; margin-left: 0%; width: 3%; height: 3%;" src="hazard.png" alt="Exclamation Mark"/>
+            <img style="margin-top: 10px; margin-left: 0%; width: 3%; height: 3%;" src="img/hazard.png" alt="Exclamation Mark"/>
         </div>
         <div style="display: flex;">
-            <img style=" margin-left:20%; margin-right: 0%;" src="barbedWire.svg" alt="Barbed Wire"/> 
-            <img style="margin-left: 0%; margin-right: 0%;" src="barbedWire.svg" alt="Barbed Wire"/>
-            <img style="margin-left: 0%; margin-right: 0%;" src="barbedWire.svg" alt="Barbed Wire"/>
-            <img style="margin-left: 0%;" src="barbedWire.svg" alt="Barbed Wire"/>
+            <img style=" margin-left:20%; margin-right: 0%;" src="img/barbedWire.svg" alt="Barbed Wire"/> 
+            <img style="margin-left: 0%; margin-right: 0%;" src="img/barbedWire.svg" alt="Barbed Wire"/>
+            <img style="margin-left: 0%; margin-right: 0%;" src="img/barbedWire.svg" alt="Barbed Wire"/>
+            <img style="margin-left: 0%;" src="img/barbedWire.svg" alt="Barbed Wire"/>
         </div> -->
 
         <div class="footer">
-            <div class="webringTemp" style="display: flex; align-items: center; background-color: #f5f5f500; margin-top: 0.5%;">
+            <div class="webringButton">
                 <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=prev"
-                    style="color: #ffffff; text-decoration: none; font-size: 100%; margin-right: 5%; margin-left: 5%;">←</a>
+                   class="webring" style="margin-right: 5%;">←</a>
                 <a href="https://webring.ayanali.net/#https://ketevangallagher.com" target="_blank">
-                    <img src="https://webring.ayanali.net/img/icon-dark.svg" alt="The Currently Unnamed Webring"
+                    <img id = "wrIcon" src="https://webring.skule.ca/img/icon-dark.svg" alt="The Currently Unnamed Webring"
                         style="height: 25px;" />
                 </a>
                 <a href="https://webring.ayanali.net/#https://ketevangallagher.com?nav=next"
-                    style="color: #ffffff; text-decoration: none; font-size: 100%; margin-left: 5%;">→</a>
+                    class="webring">→</a>
             </div>
         </div>
-</body>
+
+    <script src="script.js"></script>
+
+    </body>
 
 </html>

@@ -1,7 +1,20 @@
+:root {
+    --accent: #030081;
+    --background: #ffffff;
+    --backgroundTrans: #ffffff7b;
+    --text: #000000;
+    --textInverse: #ffffff;
+    --sLink: #4d4d4d;
+    --sLinkHover: #787878;
+  }
 
-.webringTemp {
-    width: 120px;
-    height: 20px;
+
+.webringButton {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f500;
+    margin-top: 0.5%;
+    width: 10%
 }
 
 body {
@@ -10,6 +23,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--background);
  }
 
 .raleway-font {
@@ -28,59 +42,95 @@ body {
 p {
     font-family: "Raleway", sans-serif;
     font-size: 100%;
+    color: var(--text);
 }
 
 h1{
     font-family: "Antic Didone", serif;
     font-weight: 500;
-    font-size: 250%;
+    font-size: 225%;
+    color: var(--text);
 }
 
 h2{
     font-family: "Raleway", sans-serif;
     font-size: 150%; 
-    color: #030081;
+    color: var(--accent);
 }
 
-div.mainParagraph {
+h3{
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 250%; 
+    line-height: 75%;
+    color: var(--accent);
+}
+
+ul{
+    font-family: "Raleway", sans-serif;
+    font-size: 100%;
+    color: var(--text);
+}
+
+.textHighlight{
+    color: var(--accent);
+}
+
+.mainParagraph {
     display: grid;
     grid-template-columns:50% 50%;
     align-items: start;
 
   }
 
-  div.mainPageText{
-    position: fixed;
+  .mainPageText{
+    /* position: fixed; */
     margin-top: 75px;
     width: 70%;
     height: fit-content;
-    margin-left: 20%;
+    margin-left: 18%;
   }
 
+  /* .projectParagraphs{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    align-items: start;
+  } */
 
   /* img{
     margin-left: 10% ;
     margin-right: 10%;
   } */
 
+.star{
+    height: 15%;
+    width: 15%;
+    content: url("img/starDivider.svg");
+}
+
+.star.dark{
+    height: 15%;
+    width: 15%;
+    content: url("img/starInvert.svg");
+}
 
 
-div.footer {
+.footer {
     margin-top: auto;
     height:35px;
-    background-color: #030081;
+    background-color:  var(--accent);
  }
 
-div.navMenu {
+.navMenu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 45px;
-    background-color: #ffffff7b;
+    background-color: var(--backgroundTrans);
 } 
 
-div.navLinks{
+.navLinks{
     /* position: fixed;
     top: 0;
     right: 0;
@@ -88,21 +138,21 @@ div.navLinks{
     height: 7.5%; */
     position: fixed;
     right: 0;
-    width: 40%;
+    width: 47%;
     height: 45px;
     border-bottom-width:2px;
     border-bottom-style:solid;
-    border-bottom-color:#030081;
-    display: inline-block;
+    border-bottom-color: var(--accent);
+    display: flex;
 
 }
 
-div.scrollBar{
+.scrollBar{
     position: fixed;
     right: 0;
-    width: 40%;
+    width: 47%;
     height: 45px;
-    background-color: #ffffff;
+    background-color: var(--background);
     z-index: -1;
     /* border-bottom-width:2px;
     border-bottom-style:solid;
@@ -113,7 +163,7 @@ div.scrollBar{
 /* Style the links inside the navigation bar */
 .navMenu a {
     float: left;
-    color: #000000;
+    color: var(--text);
     text-align: center;
     padding-right: 4%;
     padding-top: 2%;
@@ -126,12 +176,12 @@ div.scrollBar{
   
   /* Change the color of links on hover */
   .navMenu a:hover {
-    color: #030081;
+    color:  var(--accent);
     text-decoration: none;
   }
 
 a {
-    color: #030081;
+    color:  var(--accent);
     text-decoration:none
 }
 
@@ -143,11 +193,18 @@ a:hover{
 }
 
 a.smallLinks{
-    color: #4d4d4d;
+    color: var(--sLink);
     font-weight: 700;
     padding: 2%;
 }
 a.smallLinks:hover {
     text-decoration: none;
-    color: #787878;
+    color: var(--sLinkHover);
+}
+
+a.webring{
+    color: var(--textInverse);
+    text-decoration: none; 
+    font-size: 100%; 
+    margin-left: 5%;
 }
