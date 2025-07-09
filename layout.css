@@ -121,6 +121,21 @@ ul{
     background-color:  var(--accent);
  }
 
+@keyframes fadeInUp {
+0% {
+    transform: translateY(40%);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0%);
+    opacity: 1;
+}
+}
+
+.fadeInUp-animation {
+animation: 1s fadeInUp;
+}
+
 .navMenu {
     position: fixed;
     top: 0;
@@ -182,13 +197,25 @@ ul{
 
 a {
     color:  var(--accent);
-    text-decoration:none
+    text-decoration:none;
 }
 
 a:hover{
     text-decoration: underline;
+    color: var(--accent);
     /* color: #F9CA24 */
     /* color: #F1C40F */
+    
+}
+
+a.paragraphLinks {
+    color:  var(--text);
+    text-decoration:none;
+}
+
+a.paragraphLinks:hover{
+    text-decoration: underline;
+    color: var(--accent);
     
 }
 
