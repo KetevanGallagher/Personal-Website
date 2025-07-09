@@ -13,7 +13,7 @@
     right: 0;
     width: 47%;
     height: 45px;
-    background-color: var(--background);
+    background-color: #ff0000;
     z-index: -1;
     border-bottom-width:2px;
     border-bottom-style:solid;
