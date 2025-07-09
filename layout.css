@@ -8,6 +8,35 @@
     --sLinkHover: #787878;
   }
 
+.scrollDiv{
+    position: fixed;
+    right: 0;
+    width: 47%;
+    height: 45px;
+    background-color: var(--background);
+    z-index: -1;
+    border-bottom-width:2px;
+    border-bottom-style:solid;
+    border-bottom-color: var(--accent);
+    animation: scrollDiv 1s linear;
+    
+}
+
+@keyframes scrollDiv {
+    to {
+      width: 100%;
+    }
+  }
+
+:root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
 
 .webringButton {
     display: flex;
@@ -24,7 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--background);
- }
+  }
 
 .raleway-font {
     font-family: "Raleway", sans-serif;
@@ -116,6 +145,7 @@ ul{
 
 
 .footer {
+    display: flex;
     margin-top: auto;
     height:35px;
     background-color:  var(--accent);
@@ -155,23 +185,8 @@ animation: 1s fadeInUp;
     right: 0;
     width: 47%;
     height: 45px;
-    border-bottom-width:2px;
-    border-bottom-style:solid;
-    border-bottom-color: var(--accent);
     display: flex;
 
-}
-
-.scrollBar{
-    position: fixed;
-    right: 0;
-    width: 47%;
-    height: 45px;
-    background-color: var(--background);
-    z-index: -1;
-    /* border-bottom-width:2px;
-    border-bottom-style:solid;
-    border-bottom-color:#030081; */
 }
 
 
@@ -235,3 +250,5 @@ a.webring{
     font-size: 100%; 
     margin-left: 5%;
 }
+
+
