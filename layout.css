@@ -132,17 +132,31 @@ ul{
   } */
 
 .star{
-    height: 15%;
-    width: 15%;
+    height: 1.57em;
+    width: auto;
+    margin: 0.02em;
     content: url("img/starDivider.svg");
 }
 
 .star.dark{
-    height: 15%;
-    width: 15%;
+    height: 1.57em;
+    width: auto;
+    margin: 0.02em;
     content: url("img/starInvert.svg");
 }
 
+.pageTitle {
+    margin-top: 30px; 
+    margin-left: 15%
+}
+
+.yearColumn{
+    min-width: 3rem;
+    flex-shrink: none;
+    margin-top: 0.35em;
+    margin-left: -0.5rem
+
+}
 
 .footer {
     display: flex;
