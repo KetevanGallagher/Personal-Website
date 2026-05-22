@@ -11,7 +11,7 @@
 .scrollDiv{
     position: fixed;
     right: 0;
-    width: 47%;
+    width: 586px;
     height: 45px;
     background-color: var(--background);
     z-index: -1;
@@ -19,7 +19,6 @@
     border-bottom-style:solid;
     border-bottom-color: var(--accent);
     animation: scrollDiv 1s linear;
-    
 }
 
 @keyframes scrollDiv {
@@ -197,9 +196,10 @@ animation: 1s fadeInUp;
     height: 7.5%; */
     position: fixed;
     right: 0;
-    width: 47%;
+    width: 586px;
     height: 45px;
     display: flex;
+    align-items: center;
 
 }
 
@@ -209,14 +209,14 @@ animation: 1s fadeInUp;
     float: left;
     color: var(--text);
     text-align: center;
-    padding-right: 4%;
+    padding-right: 1.2rem;
     padding-top: 2%;
     padding-bottom: 2%;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     font-size: 120%;
     padding-left: 0%;
-  }
+}
   
   /* Change the color of links on hover */
   .navMenu a:hover {
