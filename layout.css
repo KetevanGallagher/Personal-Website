@@ -162,6 +162,7 @@ ul{
     margin-top: auto;
     height:35px;
     background-color:  var(--accent);
+    gap: 0.5rem;
  }
 
 @keyframes fadeInUp {
@@ -173,6 +174,12 @@ ul{
     transform: translateY(0%);
     opacity: 1;
 }
+}
+
+@media (max-width: 600px) {
+    .footerExtra {
+        display: none;
+    }
 }
 
 .fadeInUp-animation {
