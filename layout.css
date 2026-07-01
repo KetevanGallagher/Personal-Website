@@ -21,12 +21,32 @@
     animation: scrollDiv 1s linear;
 }
 
+.smallScrollDiv{
+    position: fixed;
+    right: 0;
+    height: 45px;
+    background-color: var(--background);
+    z-index: 0;
+    border-bottom-width:2px;
+    border-bottom-style:solid;
+    border-bottom-color: var(--accent);
+    animation: smallScrollDiv 1s linear;
+}
+
 @keyframes scrollDiv {
     to {
       width: 100%;
     }
   }
 
+@keyframes smallScrollDiv {
+    from {
+        width: 122px;
+    }
+    to {
+        width: 100%;
+    }
+}
 :root * {
     /* Pause the animation */
     animation-play-state: paused;
@@ -52,6 +72,10 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--background);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
 .raleway-font {
@@ -106,7 +130,7 @@ ul{
 
 .mainParagraph {
     display: grid;
-    grid-template-columns:50% 50%;
+    grid-template-columns:2fr 3fr;
     align-items: start;
 
   }
@@ -176,14 +200,44 @@ ul{
 }
 }
 
-@media (max-width: 600px) {
-    .footerExtra {
-        display: none;
-    }
-}
 
 .fadeInUp-animation {
 animation: 1s fadeInUp;
+}
+
+.menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: var(--background);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.menuOverlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menuOverlay a {
+    font-family: "Raleway", sans-serif;
+    font-size: 120%;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.menuOverlay a:hover {
+    color: var(--accent);
+    text-decoration: none;
 }
 
 .navMenu {
@@ -194,6 +248,20 @@ animation: 1s fadeInUp;
     height: 45px;
     background-color: var(--backgroundTrans);
 } 
+
+.smallNav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 45px;
+    background-color: var(--backgroundTrans);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-right: 1rem;
+}
 
 .navLinks{
     /* position: fixed;
@@ -273,3 +341,53 @@ a.webring{
 }
 
 
+@media (max-width: 600px) {
+    .footerExtra {
+        display: none;
+    }
+    .navMenu .navLinks{
+        display: none;
+        pointer-events: none;
+    }
+    .mainParagraph {
+        grid-template-columns: 1fr;
+    }
+    .mainPageText {
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .mainParagraph > div:last-child {
+        text-align: center;
+    }
+    .mainParagraph > div:last-child p {
+        width: 100% !important;
+        min-width: unset !important;
+        text-align: center;
+    }
+    .pageTitle > div {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .smallNav {
+        display: none;
+    }
+    .smallScrollDiv {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .mainParagraph {
+        grid-template-columns: 3fr 3fr;
+    }
+    .mainPageText {
+        width: 85%;
+        margin-left: 8%;
+    }
+}

@@ -29,14 +29,32 @@
 </head>
 
 <body>
+    <div class = "menuOverlay">
+        <div style="position: absolute; top: 0; right: 0">
+            <img src="img/starMenuWhite.svg" height="40px"
+        width="40px" id="menuOverlayOut" alt="Exit out of menu">
+        </div>
+        <a href="/">Home</a>
+        <a style="font-weight: 500;" href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="resources/2026KetevanGallagher.pdf" target="_blank">Resume</a>
+    </div>
+    <div class="smallNav">
+        <img src="img/starMenuBlue.svg" id="menuOverlayIn" alt="Enter menu overlay" height="70%"
+        width="70%">
+        <img src="img/moonPhases/newMoon.svg" id="darkLightModeSmall" alt="Dark/light mode button" height="75%"
+        width="75%" style="padding-top: -1.5px; padding-right: 1.5%;" onclick="switchTheme()">
+    </div>
+    <div class="smallScrollDiv"></div>
     <div class="navMenu">
         <div class="navLinks">
             <a href="/">Home</a>
             <a style="font-weight: 500;" href="publications.html">Publications</a>
             <a href="projects.html">Projects</a>
             <a href="education.html">Education</a>
-            <a href="resources/2025KetevanGallagher.pdf" target="_blank">Resume</a>
-            <img id="darkLightMode" src="img/moonPhases/newMoon.svg" alt="Dark/light mode button" height="75%"
+            <a href="resources/2026KetevanGallagher.pdf" target="_blank">Resume</a>
+            <img src="img/moonPhases/newMoon.svg" id="darkLightMode" alt="Dark/light mode button" height="75%"
                 width="75%" style="padding-top: -1.5px; padding-right: 1.5%;" onclick="switchTheme()">
             <div class="scrollDiv"></div>
         </div>

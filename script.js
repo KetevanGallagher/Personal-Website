@@ -64,6 +64,15 @@ function darkMode() {
   r.style.setProperty("--sLinkHover", "#878787");
   document.getElementById("darkLightMode").src="img/sun.svg";
   document.getElementById("wrIcon").src="https://webring.skule.ca/img/icon.svg";
+  if (document.getElementById("darkLightModeSmall")) {
+        document.getElementById("darkLightModeSmall").src = "img/sun.svg";
+  }
+  if (document.getElementById("menuOverlayOut")) {
+    document.getElementById("menuOverlayOut").src = "img/starMenuDark.svg";
+  }
+  if (document.getElementById("menuOverlayIn")) {
+    document.getElementById("menuOverlayIn").src = "img/starMenuYellow.svg";
+  }
   const stars = document.querySelectorAll(".star");
   stars.forEach(function(star) {
     star.classList.add("dark");
@@ -81,6 +90,15 @@ function lightMode(moonImg) {
   r.style.setProperty("--sLink", "#4d4d4d");
   r.style.setProperty("--sLinkHover", "#787878");
   document.getElementById("darkLightMode").src=moonImg;
+  if (document.getElementById("darkLightModeSmall")) {
+        document.getElementById("darkLightModeSmall").src = moonImg;
+  }
+  if (document.getElementById("menuOverlayOut")) {
+    document.getElementById("menuOverlayOut").src = "img/starMenuWhite.svg";
+  }
+  if (document.getElementById("menuOverlayIn")) {
+    document.getElementById("menuOverlayIn").src = "img/starMenuBlue.svg";
+  }
   document.getElementById("wrIcon").src="https://webring.skule.ca/img/icon-dark.svg";
   const stars = document.querySelectorAll(".star");
   stars.forEach(function(star) {
@@ -149,3 +167,19 @@ function imgFromPhase(phaseNum){
     return "img/moonPhases/waningCrescent.svg"
   }
 }
+
+// make sure footer width reaches full screen
+function setFooterWidth() {
+    document.querySelector('.footer').style.width = window.innerWidth + 'px';
+}
+setFooterWidth();
+window.addEventListener('resize', setFooterWidth);
+
+// menu overlay fade in and out
+document.getElementById("menuOverlayIn").addEventListener("click", function() {
+    document.querySelector(".menuOverlay").classList.add("active");
+});
+
+document.getElementById("menuOverlayOut").addEventListener("click", function() {
+    document.querySelector(".menuOverlay").classList.remove("active");
+});
