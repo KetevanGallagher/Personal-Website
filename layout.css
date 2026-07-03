@@ -254,6 +254,7 @@ animation: 1s fadeInUp;
     z-index: 1;
     top: 0;
     right: 0;
+    left: auto;
     height: 45px;
     background-color: var(--backgroundTrans);
     display: flex;
