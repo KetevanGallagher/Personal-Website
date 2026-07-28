@@ -265,18 +265,19 @@ animation: 1s fadeInUp;
 
 .smallNav {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
-    left: auto;
+    left: 0;
     height: 45px;
-    background-color: var(--backgroundTrans);
-    transition: background-color 0.3s ease;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 0.5rem;
     padding-right: 1rem;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .navLinks{
